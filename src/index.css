@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.flip-clock {
+  font-family: "Nova Square";
+  font-weight: 700;
+  --fcc-flip-duration: 0.5s;
+  --fcc-digit-block-width: 40px;
+  --fcc-digit-block-height: 60px;
+  --fcc-digit-font-size: 30px;
+  --fcc-digit-color: black;
+  --fcc-label-font-size: 10px;
+  --fcc-label-color: #fff;
+  --fcc-background: white;
+  --fcc-divider-color: black;
+  --fcc-divider-height: 1px;
+  --fcc-separator-size: 6px;
+  --fcc-separator-color: whitesmoke;
+}
+
+@media (max-width: 410px) {
+  .flip-clock {
+    --fcc-digit-block-width: 30px;
+    --fcc-digit-block-height: 40px;
+    --fcc-digit-font-size: 20px;
+
+    --fcc-label-font-size: 10px;
+
+    --fcc-divider-height: 1px;
+    --fcc-separator-size: 6px;
+  }
+}
+
+@media (min-width: 900px) {
+  .flip-clock {
+    --fcc-digit-block-width: 80px;
+    --fcc-digit-block-height: 120px;
+    --fcc-digit-font-size: 60px;
+
+    --fcc-label-font-size: 20px;
+
+    --fcc-divider-height: 2px;
+    --fcc-separator-size: 12px;
+  }
+}
